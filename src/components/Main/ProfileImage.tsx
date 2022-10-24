@@ -11,6 +11,11 @@ const ProfileImageWrapper = styled.img`
   margin-bottom:30px;
   border-radius: 50%;
   object-fit:cover;
+
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
 `
 
 const ProfileImage:FunctionComponent = function (){

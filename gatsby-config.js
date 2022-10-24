@@ -20,6 +20,8 @@ module.exports = {
     //     path: `${__dirname}/contents`,
     //   },
     // },
+
+
     `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
