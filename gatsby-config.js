@@ -5,6 +5,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
@@ -12,7 +13,6 @@ module.exports = {
         allExtensions: true,
       },
     },
-
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -20,6 +20,7 @@ module.exports = {
     //     path: `${__dirname}/contents`,
     //   },
     // },
+    `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
