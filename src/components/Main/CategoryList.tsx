@@ -32,13 +32,13 @@ const CategoryListWrapper = styled.div`
   }
 `
 
-const CategoryItem = styled(({ active, ...props }:GatsbyLinkProps) => (
+const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
     <Link {...props} />
-))`
+))<CategoryItemProps>`
   margin-right: 20px;
-  padding:5px 0;
+  padding: 5px 0;
   font-size: 18px;
-  font-weight:${({active}) => (active ? '800' : '400')};
+  font-weight: ${({ active }) => (active ? '800' : '400')};
   cursor: pointer;
   &:last-of-type {
     margin-right: 0;
@@ -48,13 +48,20 @@ const CategoryItem = styled(({ active, ...props }:GatsbyLinkProps) => (
   }
 `
 
-const CategoryList: FunctionComponent<CategoryListProps> = function ({selectedCategory,categoryList}){
+const CategoryList: FunctionComponent<CategoryListProps> = function ({
+                                                                         selectedCategory,
+                                                                         categoryList,
+                                                                     }) {
     return (
         <CategoryListWrapper>
-            {Object.entries(categoryList).map(([name,count]) => (
-               <CategoryItem to={`/?category=${name}`} active={name===selectedCategory} key={name}>
-                   #{name} {count}
-               </CategoryItem>
+            {Object.entries(categoryList).map(([name, count]) => (
+                <CategoryItem
+                    to={`/?category=${name}`}
+                    active={name === selectedCategory}
+                    key={name}
+                >
+                    #{name}({count})
+                </CategoryItem>
             ))}
         </CategoryListWrapper>
     )
