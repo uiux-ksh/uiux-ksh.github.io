@@ -6,26 +6,32 @@ summary: 'Next.js 혼자서 독학공부하는 내용입니다.'
 thumbnail: './images/NEXT.jpg'
 ---
 
-### 1. 별수호자 PC방 이벤트
+### 1. NextJS
 
-디자인: Figma
+React 라이브러리의 프레임워크 이다.
+Next.js 는 SPA와 SSR의 단점을 해결하기 위해서 리액트에 서버 사이드 렌더링(SSR) 기능을 더하여 SPA와 SSR의 장점을 가질 수 있게 됩니다.
 
-퍼블리싱: HTML SASS (리액트환경에서 퍼블리싱)
 
-사용기술 : TypeScript,ReactHooks,Axios
+pre-rendering: 미리 html 파일들을 만들어 놓는것
 
-라이브러리: Zustand,MUI,Day.js
+Pre-rendering에는 두 가지 형태가 있습니다.
+정적 생성(빌드후에 생성됩니다.)
+Server Side Rendering (SSR, Dynamic Rendering)
+두 가지의 차이점은 언제 html 파일을 생성하는지에 갈린다.
+서버 사이드 렌더링(Server-side Rendering)
+매 요청마다 html을 생성
+항상 최신 상태 유지
+getServerSideProps
 
-### 2. 이벤트 페이지 설명
+### 2. SSR 서버사이드 렌더링
 
-시간에 따라 프로그레스바 게이지가 점점 증가해 도착점 달성시 게임 아이템이 지급하는 이벤트입니다.
-
-그외 반응형 슬라이드  날짜마다 스킨이 변경되도록하는 데이터관리 등이 있습니다.
-
+서버 사이드 렌더링은 클라이언트가 서버에 매번 데이터를 요청해서 서버에서 처리하는 방식입니다.
+클라이언트에서 요청이 들어올 때마다 매번 서버에서 새로운 화면을 만들어 제공하는것(서버가 화면(View)을그려주는 주체가 됩니다.)
 ---
+## 장점
+1.첫 페이지 로딩 속도가 클라언트 사이드 렌더링(CSR)에 비해 더빠릅니다.
+해당 첫 페이지에 해당하는 문서만 브라우저에게 전달하여 브라우저가 렌더링하기 떄문에 초기속도가 CSR에 비해 더 빠릅니다.2.검색엔진최적화가 가능합니다 (가장큰이유)
 
-## 실제 사이트
-
-
-
-[<https://events.kr.riotgames.com/starguardian-pcb](<https://events.kr.riotgames.com/starguardian-pcb>)
+## 단점
+1.초기 로딩 이후 페이지 이동 시 속도가 다소 느립니다.
+페이지 이동 시마다 클라이언트가 서버에게 필요한 데이터를 요청하고 서버가 응답해주는 방식이다 보니 속도가 다소 느립니다.
