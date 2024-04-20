@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://uiux-ksh.github.io/sitemap/sitemap-index.xml
-Host: https://uiux-ksh.github.io
