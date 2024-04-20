@@ -1,9 +1,9 @@
 ---
-date: '2023-05-01'
+date: '2023-06-01'
 title: '스마일게이트'
 categories: ['project']
 summary: '스마일게이트 테일즈런너'
-thumbnail: './images/roadMap.jpg'
+thumbnail: './images/roadMap.png'
 ---
 
 ### 1. 모바일 버전  768px이하 작업
@@ -25,4 +25,4 @@ css은 반응형css로만 구현하였습니다 (미디어쿼리)
 
 
 
-[<https://smailgate-o998.vercel.app/](<https://smailgate-o998.vercel.app/>)
+[<https://tr.game.onstove.com/event/updateRoadmap/index.asp](<https://tr.game.onstove.com/event/updateRoadmap/index.asp>)

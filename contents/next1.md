@@ -1,37 +1,23 @@
 ---
-date: '2022-09-29'
-title: 'NEXT.JS'
-categories: ['NEXT']
-summary: 'Next.js 혼자서 독학공부하는 내용입니다.'
-thumbnail: './images/NEXT.jpg'
+date: '2023-05-18'
+title: '스마일게이트'
+categories: ['project']
+summary: '스마일게이트 테일즈런너'
+thumbnail: './images/section01.png'
 ---
 
-### 1. NextJS
+### 1. 스마일게이트 테일즈런너 런너의옷장
+디자인:psd
+작업:html css javascript
 
-React 라이브러리의 프레임워크 이다.
-Next.js 는 SPA와 SSR의 단점을 해결하기 위해서 리액트에 서버 사이드 렌더링(SSR) 기능을 더하여 SPA와 SSR의 장점을 가질 수 있게 됩니다.
 
+### 2. 페이지 설명
+5월 런너의 옷장 퍼블리싱작업 (여름) 각위치에 알맞은 동영상 배치
 
-pre-rendering: 미리 html 파일들을 만들어 놓는것
-
-Pre-rendering에는 두 가지 형태가 있습니다.
-정적 생성(빌드후에 생성됩니다.)
-Server Side Rendering (SSR, Dynamic Rendering)
-두 가지의 차이점은 언제 html 파일을 생성하는지에 갈린다.
-서버 사이드 렌더링(Server-side Rendering)
-매 요청마다 html을 생성
-항상 최신 상태 유지
-getServerSideProps
-
-### 2. SSR 서버사이드 렌더링
-
-서버 사이드 렌더링은 클라이언트가 서버에 매번 데이터를 요청해서 서버에서 처리하는 방식입니다.
-클라이언트에서 요청이 들어올 때마다 매번 서버에서 새로운 화면을 만들어 제공하는것(서버가 화면(View)을그려주는 주체가 됩니다.)
 ---
-## 장점
-1.첫 페이지 로딩 속도가 클라언트 사이드 렌더링(CSR)에 비해 더빠릅니다.
-해당 첫 페이지에 해당하는 문서만 브라우저에게 전달하여 브라우저가 렌더링하기 떄문에 초기속도가 CSR에 비해 더 빠릅니다.2.검색엔진최적화가 가능합니다 (가장큰이유)
 
-## 단점
-1.초기 로딩 이후 페이지 이동 시 속도가 다소 느립니다.
-페이지 이동 시마다 클라이언트가 서버에게 필요한 데이터를 요청하고 서버가 응답해주는 방식이다 보니 속도가 다소 느립니다.
+## 실제 사이트
+
+
+
+[<https://tr.game.onstove.com/event/updateRoadmap/index.asp](<https://tr.game.onstove.com/event/updateRoadmap/index.asp>)
